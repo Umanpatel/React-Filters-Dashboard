@@ -2,13 +2,14 @@
 # React Filters Dashboard
 
 ## Overview
-The React Filters Dashboard is a web application that allows users to filter and display data in a tabular format. It provides a user-friendly interface for applying filters to the data, making it easier to analyze and visualize information.
+The React Filters Dashboard is a user-friendly web app for filtering and viewing products. It offers an intuitive interface for applying various filters, enabling efficient data exploration and visualization. It lets you search by brand, category, price, and color, updating results instantly for a seamless browsing experience.
 
 ## Features
 - **Button Component**: Recommended Filters According to Brands (Nike, Adidas, Puma, Vans)  
 - **Card Component**: To display details (img, title, star, reviews, prevPrice, newPrice) of All Products
 - **SideBar**: Apply Filter by Category, Price, and Colors
 - **Search Bar**: handler When user pass input to searchbar, This field Iterating all the characters that user is typing in search field
+
 ![alt text](image.png)
 
 ## Tech Stack
