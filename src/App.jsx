@@ -18,7 +18,9 @@ const App = () => {
     setQuery(event.target.value)
   }
   // Iterating all the characters that user is typing in search field
-  const filteredItems = products.filter(product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1))
+  const filteredItems = products.filter((product) => 
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1
+);
 
   // ---Radio Filters------
   const handleChange = (event) => {
@@ -50,9 +52,6 @@ const App = () => {
       );
     }
 
-    // call filterdata function and store it in a result variable
-    const result = filterData(products, selectedCategory, query)
-
     return filteredProducts.map(({img, title, star, reviews, prevPrice, newPrice}) => (
       <Card 
         key={Math.random()}
@@ -65,6 +64,9 @@ const App = () => {
       />
     ))
   }
+
+  // call filterdata function and store it in a result variable
+  const result = filterData(products, selectedCategory, query)
 
   return (
     <div>
