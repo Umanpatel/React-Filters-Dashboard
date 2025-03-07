@@ -6,7 +6,6 @@ import Sidebar from "./Sidebar/Sidebar"
 
 // Import Database
 import products from './db/data'
-import Category from "./Sidebar/Category/Category"
 import Card from "./components/Card"
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null)
